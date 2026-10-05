@@ -1,5 +1,7 @@
 :HL["/mtgs-demo/_next/static/chunks/1l_wxz86dyy07.css","style"]
 :HL["/mtgs-demo/_next/static/chunks/0z961p7_75loa.css","style"]
-:HL["/mtgs-demo/_next/static/chunks/1l-yxmy8a5c97.css","style"]
+:HL["/mtgs-demo/_next/static/chunks/170-69ft_lqzf.css","style"]
+:HL["/mtgs-demo/_next/static/chunks/42hk5dp_c1beo.css","style"]
+:HL["/mtgs-demo/_next/static/media/09fd331868a74310-s.p.1hjf3jqny6u66.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/mtgs-demo/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"news","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"driver-recruit","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"pkO7NzwbCPOe07ZGNC206"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"news","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"driver-recruit","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"vBwiP-mGxHz615fRFxA7K"}

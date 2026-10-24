@@ -1,0 +1,31 @@
+# =========================================================
+# 本番サーバー（Apache 互換のレンタルサーバー）用の設定
+# 静的書き出しでは next.config の headers() が効かないため、ここで設定する。
+# GitHub Pages では無視される（害はない）。
+# 公開手順：まず HSTS は max-age=300、CSP は Report-Only で全ページを確認 →
+#           問題がなければ HSTS を 31536000 に、CSP を Content-Security-Policy に切り替える。
+# =========================================================
+
+# HTTPS へ統一
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  # SSL を手前のプロキシで処理するサーバーでのリダイレクトの無限ループを防ぐ
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# 一覧表示をしない
+Options -Indexes
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=300"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+  # フォームの送信先を決めたら、connect-src と form-action にそのドメインを追加する
+  Header always set Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; form-action 'self'; frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+</IfModule>

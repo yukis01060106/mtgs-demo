@@ -2,9 +2,9 @@
 :HL["/mtgs-demo/_next/static/chunks/0vxnf4lfi6ac6.css","style"]
 :HL["/mtgs-demo/_next/static/chunks/0fw0a2fps638h.css","style"]
 :HL["/mtgs-demo/_next/static/chunks/357djn439oi_m.css","style"]
-:HL["/mtgs-demo/_next/static/chunks/0lmwzwl6hev1x.css","style"]
+:HL["/mtgs-demo/_next/static/chunks/2gvlqo4dudhy5.css","style"]
 :HL["/mtgs-demo/_next/static/media/07c7676b89ed2778-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/mtgs-demo/_next/static/media/b7c17852bbb52245-s.p.1hjf3jqny6u66.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"message","h":96,"c":"$Q2"}]]
-0:{"b":"vgpu7rtHihPUqNPKFgVqY","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"mdoHDPWq3kFFZm_HbJRih","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
